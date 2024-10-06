@@ -5,12 +5,12 @@ from PIL import Image, ImageTk
 class ImageDenoiser:
     def __init__(self, master):
         self.master = master
-        master.title("Görüntü Gürültü Giderme Uygulaması")
+        master.title("Image Denoising Application")
 
-        self.label = Label(master, text="Bir görüntü yükleyin:")
+        self.label = Label(master, text="Upload an image:")
         self.label.pack()
 
-        self.load_button = Button(master, text="Görüntü Yükle", command=self.load_image)
+        self.load_button = Button(master, text="Upload Image", command=self.load_image)
         self.load_button.pack()
 
         self.filter_option = StringVar(master)
@@ -18,10 +18,10 @@ class ImageDenoiser:
         self.filter_menu = OptionMenu(master, self.filter_option, "Median", "Gaussian", "Bilateral")
         self.filter_menu.pack()
 
-        self.denoise_button = Button(master, text="Gürültüyü Gider", command=self.denoise_image, state='disabled')
+        self.denoise_button = Button(master, text="Eliminate noise", command=self.denoise_image, state='disabled')
         self.denoise_button.pack()
 
-        self.save_button = Button(master, text="Görüntüyü Kaydet", command=self.save_image, state='disabled')
+        self.save_button = Button(master, text="Save Image", command=self.save_image, state='disabled')
         self.save_button.pack()
 
         self.original_image_label = Label(master)
