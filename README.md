@@ -6,4 +6,4 @@
 ##### Key features include the ability to apply filters, an interactive interface that simplifies image uploading,
 ##### filter selection, and image saving, as well as the instant feedback users receive from their adjustments. 
 ##### This application serves as a powerful tool for both hobbyists and professionals in the visual media field,
-###### enabling users to improve their image processing skills and achieve higher quality results in their creative projects.
+##### enabling users to improve their image processing skills and achieve higher quality results in their creative projects.
